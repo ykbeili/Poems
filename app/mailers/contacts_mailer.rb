@@ -1,2 +1,0 @@
-class ContactsMailer < ApplicationMailer
-end
