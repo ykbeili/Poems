@@ -5,6 +5,6 @@ class ContactsController < ApplicationController
     @name = params[:name]
     @email = params[:email]
     @text = params[:text]
-    ContactMeMailer.message_for_you().deliver_now
+    ContactMeMailer.message_for_you(@name, @text).deliver_now
   end
 end
