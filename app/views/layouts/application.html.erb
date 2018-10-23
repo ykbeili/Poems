@@ -11,14 +11,22 @@
 
   <body>
     <nav>
+      <div class="columns">
+        <div class="column">
       <%= link_to 'Home', root_path %>
-      |
+        </div>
+        <div class="column">
       <%= link_to 'About Me', about_me_path %>
-      |
+      </div>
+        <div class="column">
       <%= link_to 'Contact_me', contact_me_path %>
-      |
+      </div>
+      <div class="column">
       <%= link_to 'Poems', root_path %>
+    </div>
+  </div>
     </nav>
+    <br>
     <%= yield %>
   </body>
 </html>
