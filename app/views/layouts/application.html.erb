@@ -10,21 +10,11 @@
   </head>
 
   <body>
-    <nav>
-      <div class="columns">
-        <div class="column">
-      <%= link_to 'Home', root_path %>
-        </div>
-        <div class="column">
-      <%= link_to 'About Me', about_me_path %>
-      </div>
-        <div class="column">
-      <%= link_to 'Contact_me', contact_me_path %>
-      </div>
-      <div class="column">
-      <%= link_to 'Poems', root_path %>
-    </div>
-  </div>
+    <nav class="navbar">
+      <%= link_to 'Home', root_path,class:'navbar-item' %>
+      <%= link_to 'About Me', about_me_path,class:'navbar-item' %>
+      <%= link_to 'Contact_me', contact_me_path,class:'navbar-item' %>
+      <%= link_to 'Poems', root_path,class:'navbar-item' %>
     </nav>
     <br>
     <%= yield %>
