@@ -4,14 +4,12 @@
     <title>Poems</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
     <nav class="navbar">
-      <%= link_to 'Home', root_path,class:'navbar-item' %>
+      <%= link_to 'Home', root_path,class:'navbar-item', id:'home' %>
       <%= link_to 'About Me', about_me_path,class:'navbar-item' %>
       <%= link_to 'Contact_me', contact_me_path,class:'navbar-item' %>
       <%= link_to 'Poems', root_path,class:'navbar-item' %>

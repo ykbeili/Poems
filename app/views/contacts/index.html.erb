@@ -1,19 +1,21 @@
+<body id='Contact_me_body'>
 <div class="columns">
   <div class="column">
   </div>
 <div class="column">
   <%= form_tag contact_me_path do %>
   <strong class="label has-text-centered"><%= label_tag :name %></strong>
-  <%= text_field_tag :name,'',class: "input",id: 'input_name'  %>
+  <%= text_field_tag :name,'',class: "input is-medium",id: 'input_name'  %>
   <strong class="label has-text-centered"><%= label_tag :email  %></strong>
-  <%= email_field_tag :email,'',class: 'input',id: 'input_email' %>
+  <%= email_field_tag :email,'',class: 'input is-medium',id: 'input_email' %>
   <strong class="label has-text-centered"><%= label_tag :text  %></strong>
   <%= text_area_tag :text,'',class: 'textarea',id: 'input_text' %>
   <div id="boba">
-  <%= submit_tag 'Contact Me', class: 'button is-small is-outlined is-rounded', id: 'boba2' %>
+  <%= submit_tag 'Contact Me', class: 'button is-text is-black is-outlined is-medium is-fullwidth' %>
   </div>
-  <% end %>
+ </div>
+  <div class="column">
+ </div>
 </div>
-<div class="column">
-</div>
-</div>
+<% end %>
+</body>
