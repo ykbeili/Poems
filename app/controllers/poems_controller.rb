@@ -3,13 +3,16 @@ class PoemsController < ApplicationController
     @poem = Poem.new
   end
   def index
-    @poems = Poem.order(:created_at)
+    @poems = Poem.order(created_at: :desc)
   end
   def create
     poems_params = params.require(:poem).permit([:name, :description])
     @poem = Poem.new poems_params
-    @poem.save
-    redirect_to root_path
+    if @poem.save
+    redirect_to poems_path
+    else
+    render :new
+    end
   end
   def show
     @poem = Poem.find params[:id]
