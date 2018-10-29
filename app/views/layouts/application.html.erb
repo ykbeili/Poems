@@ -20,7 +20,8 @@
       <%= link_to 'Home', root_path,class:'navbar-item', id:'home'%>
       <%= link_to 'About Me', about_me_path,class:'navbar-item' %>
       <%= link_to 'Contact me', contact_me_path,class:'navbar-item' %>
-      <%= link_to 'Poems', root_path,class:'navbar-item' %>
+      <%= link_to 'Poems', poems_path,class:'navbar-item' %>
+      <%= link_to 'New poem', new_poem_path, class:'navbar-item' %>
     </nav>
     <br>
     <%= yield %>

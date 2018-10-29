@@ -1,0 +1,6 @@
+<h1> All poems </h1>
+<hr/>
+<% @poems.each do |poem| %>
+<h1><%= link_to poem.name,poem_path(poem) %></h1>
+<p><%= poem.description %></p>
+<% end %>
