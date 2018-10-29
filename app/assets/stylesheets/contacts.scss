@@ -3,21 +3,38 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #boba{
   padding-top: 10px;
+  color: #cf4d41;
 }
 #input_text{
   background-color: transparent;
   border: 2.2px black solid;
+  font-family: cursive;
 }
 #input_name{
   background-color: transparent;
   border: 2.2px black solid;
+  font-family: cursive;
 }
 #input_email{
   background-color: transparent;
   border: 2.2px black solid;
+  font-family: cursive;
 }
 #Contact_me_body{
-  background-image: url('https://www.maranachurch.com/wp-content/uploads/2018/10/autumnwallpaper2.jpg');
+  // background-image: url('https://www.maranachurch.com/wp-content/uploads/2018/10/autumnwallpaper2.jpg');
   height:100%;
   background-repeat: no-repeat;
 }
+#navbar{
+  // background-color: #c46942;
+  background-image: url('https://images.pexels.com/photos/355302/pexels-photo-355302.jpeg?cs=srgb&dl=autumn-autumn-colours-autumn-leaves-355302.jpg&fm=jpg');
+}
+#SubmitButton{
+  color: white;
+  background-image: url('https://images.pexels.com/photos/355302/pexels-photo-355302.jpeg?cs=srgb&dl=autumn-autumn-colours-autumn-leaves-355302.jpg&fm=jpg');
+  font-family: cursive;
+}
+#firstColumn{
+  padding-left: 35px;
+}
+$brown-button: brown;
