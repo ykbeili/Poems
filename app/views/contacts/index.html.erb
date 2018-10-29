@@ -4,9 +4,9 @@
   <div class="field">
   <%= form_tag contact_me_path do %>
   <strong class="label" ><%= label_tag :firstname %></strong>
-  <%= text_field_tag :name,'',class: "input is-medium",id: 'input_name',placeholder:"First Name"  %>
+  <%= text_field_tag :first_name,'',class: "input is-medium",id: 'input_name',placeholder:"First Name"  %>
   <strong class="label" ><%= label_tag :lastname %></strong>
-  <%= text_field_tag :name,'',class: "input is-medium",id: 'input_name',placeholder:"last Name"  %>
+  <%= text_field_tag :last_name,'',class: "input is-medium",id: 'input_name',placeholder:"last Name"  %>
   <strong class="label"><%= label_tag :email  %></strong>
   <%= email_field_tag :email,'',class: 'input is-medium ',id: 'input_email',placeholder:"Email" %>
   <strong class="label"><%= label_tag :text  %></strong>
