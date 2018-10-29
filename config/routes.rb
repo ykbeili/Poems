@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get '/about_me', to: 'welcome#about'
   get('/contact_me',{to: 'contacts#index'})
   post('/contact_me', {to: 'contacts#create'})
+  resources :poems
 end
