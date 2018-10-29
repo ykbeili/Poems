@@ -1,9 +1,13 @@
 <div class="grid-container">
   <% @poems.each do |poem| %>
   <div class="grid-item">
-    <img src="https://pay.google.com/about/static/images/social/knowledge_graph_logo.png">
-    <h6>Name: <%= link_to poem.name,poem_path(poem) %></h6>
-    <p>The poem: <%= poem.description %></p>
-  </div>
+    <img src="https://pay.google.com/about/static/images/social/knowledge_graph_logo.png"></img>
+    <h6><strong>Name:</strong> <%= link_to poem.name,poem_path(poem),id:'Name' %></h6>
+    <% if poem.description.length < 40 %>
+      <p><strong>The poem: </strong><%= poem.description %></p>
+      <% else %>
+      <p><strong>The poem: </strong><%= poem.description[0...40].insert(40,'....')%></p>
+      <% end %>
+    </div>
 <% end %>
 </div>
